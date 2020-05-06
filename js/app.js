@@ -336,7 +336,7 @@ var map = new mapboxgl.Map({
         ],
         'tileSize': 256,
         'attribution':
-          'OpenStreetMap'
+          'Data: <a href="https://www.nomisweb.co.uk/census/2011/wf01bew" target="_blank">Nomis/ONS</a>. Basemap: <a href="https://openstreetmap.org" target="_blank">OpenStreetMap</a>'
       }
     },
     'layers': [
