@@ -81,6 +81,12 @@ function addLineLayer(geodata, layername) {
       .setHTML(description)
       .addTo(map);
   });
+
+  // Remove tooltips on mouseleave
+  map.on('mouseleave', layername, function (e) {
+    map.getCanvas().style.cursor = '';
+    popup.remove();
+  });
 }
 
 // Function to remove a layer + source (if it exists)

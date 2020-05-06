@@ -2,7 +2,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Nomis Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="Where we lived and worked" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bothness.github.io/census-livework/" />
+  <meta property="og:image" content="https://bothness.github.io/census-livework/img/og.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:description" content="Interactive map of connections between where people lived and worked in 2011" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Interactive map of connections between where people lived and worked in 2011">
+  <title>Where we lived and worked</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.10.0/mapbox-gl.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" />
   <style>
@@ -44,12 +53,12 @@
         <div class="form-row mt-2">
           <div class="col-5">
             <select class="form-control form-control-sm" id="searchtype">
-              <option value="residence">By place of residence</option>
-              <option value="workplace">By place of work</option>
+              <option value="residence">Place of residence</option>
+              <option value="workplace">Place of work</option>
             </select>
           </div>
           <div class="col-4"><input id="searchbox" class="form-control form-control-sm" type="search"
-              placeholder="Type a postcode..." /></div>
+              placeholder="Enter postcode..." /></div>
           <div class="col-3"><button id="searchbutton" class="btn btn-info btn-block btn-sm">Search</button></div>
         </div>
         <div id="results" class="pt-2">Type a postcode or click on the map (Wales or England only).</div>
